@@ -1,0 +1,122 @@
+//===========================================
+// -Home Page start
+//===========================================
+.body-bg-img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../images/building.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000000e6;
+    background-blend-mode: multiply;
+    transition: 5s;
+}
+
+.content-wrapper {
+    position: relative;
+    transition-duration: 360ms;
+}
+
+.sec2-part-two {
+    .container {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+
+
+        }
+
+        .column .img-wrap {
+            position: relative;
+            transition: 5s;
+
+            img {
+                border: 5px double #ffffff;
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+                transition: 800ms;
+                position: relative;
+                filter: brightness(0.7);
+
+            }
+
+            .hoverable-quotes {
+                padding: 15px;
+                background: linear-gradient(to top, #e3e3e3, #ffffffb8);
+                color: black;
+                font-weight: 600;
+                clip-path: circle(1px);
+                position: absolute;
+                transition: 800ms;
+                bottom: 0;
+                opacity: 0;
+            }
+
+            &:hover img {
+                filter: grayscale(1) blur(1px);
+
+            }
+
+            &:hover .hoverable-quotes {
+                opacity: 1;
+                width: 100%;
+                clip-path: circle(200px);
+
+            }
+        }
+
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+.sec-two {
+    clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 5%);
+}
+
+.sec-three {
+    background: linear-gradient(to bottom, #0e0040, transparent) !important;
+}
+
+.sec-four {
+    background-blend-mode: multiply;
+    background: url("../../assets/images/watch.png") 85% 45% no-repeat, linear-gradient(to bottom, #0e0040, transparent);
+    clip-path: polygon(100% 18%, 100% 100%, 0% 84%, 0% 0%);
+}
+
+.sec-five-description {
+    background-blend-mode: color-dodge;
+    clip-path: polygon(100% 18%, 100% 78%, 0% 100%, 0% 0%);
+
+}
+
+
+//===========================================
+// -Home Page end
+//===========================================

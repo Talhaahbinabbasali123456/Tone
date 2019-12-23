@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/dist/style.css">
+
+  <title>SASS</title>
+</head>
+
+<body class="body-bg-img body">
+
+  <div class="sidenav-nav-wrapper">
+    <div class="custom-navbar">
+      <div class="hamburger text-light btn btn-danger" onclick="sidenavOpen()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-item-wrapper">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#sponser">Sponser</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#quotes">Quotes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side-nav">
+      <ul class="text-light text-center" onclick="sidenavclose()">
+        <li class="btn btn-danger">close</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#sponser">Sponser</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="layer" id="home">
+      <div class="container text-left">
+        <h3>Hello World</h3>
+        <h2 class="mt-2 d-inline">Welcome To <span class="round">TA</span> Templates.
+        </h2>
+        <p class="mt-2 text-light">Designed by: <strong><u>Talha Abbas</u></strong></p>
+        <a href="https://github.com/ismailfarooq/gulp-sass-starter-template" class="btn btn-danger mt-3">Download
+          Now</a>
+      </div>
+    </div>
+
+    <div id="about" class="mt-2 pt-5 sec-two pb-5 mb-5  bg-danger jumbotron-fluid d-block w-100 ">
+      <div class="container pt-3">
+        <h1 class="pb-3">About</h1>
+        <p class="text-light">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make
+          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions
+          of Lorem Ipsum.
+        </p>
+        <div class="container p-5 sec-carousel">
+          <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/bulb.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/bulb2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/bg-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> -->
+        </div>
+        <p class="text-light">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make
+          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions
+          of Lorem Ipsum.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="sec2-part-two pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <div class="img-wrap">
+              <img src="assets/images/watch3.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch1.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch2.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch3.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-wrap">
+              <img src="assets/images/watch4.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch5.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch2.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch7.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-wrap">
+              <img src="assets/images/watch3.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch1.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch2.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch3.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-wrap">
+              <img src="assets/images/watch4.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch5.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch2.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="assets/images/watch7.jpg">
+              <div class="hoverable-quotes">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sponser" class="sec-three pt-5 pb-5 ">
+      <div class="container mt-5">
+        <h1 class="text-center">Sponsers</h1>
+        <p class="text-light text-center">This is a modified jumbotron that occupies the entire horizontal space of its
+          parent.</p>
+      </div>
+      <br>
+      <div class="pt-5 pb-5 sponser container ">
+        <img src="assets/images/Cisco_Logo.png" alt="">
+        <img src="assets/images/apple.png" alt="">
+        <img src="assets/images/thunder.png" alt="">
+        <img src="assets/images/youtube.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="mt-5 pt-5  pb-5 jumbotron-fluid">
+      <div class="mt-5 cards-wrappers container pt-5 pb-5" id="service">
+        <h1 class="text-center mt-5 mb-5">Service We Provide</h1>
+        <div class="card-columns">
+          <div class="">
+            <img src="assets/images/bulb.jpg" class="card-img-top border" alt="...">
+            <div class="card-body">
+              <h5>Card title that wraps to a new line</h5>
+              <p class="text-light">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="p-3">
+            <blockquote class="blockquote mb-0 card-body">
+              <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="">
+            <img src="assets/images/bulb2.jpg" class="card-img-top border" alt="...">
+            <div class="card-body">
+              <h5>Card title</h5>
+              <p class="text-light">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="bg-danger text-white text-center p-3">
+            <blockquote class="blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <footer class="blockquote-footer text-white">
+                <small>
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="text-center">
+            <div class="card-body">
+              <h5>Card title</h5>
+              <p class="text-light">This card has a regular title and short paragraphy of text below it.</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="card-body">
+              <h5>Card title</h5>
+              <p class="text-light">This is another card with title and supporting text below. This card has some
+                additional content to make it slightly taller overall.</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/bg-4.jpg" class="card-img-top border" alt="...">
+          </div>
+          <div class="p-3 text-right">
+            <blockquote class="blockquote mb-0">
+              <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div>
+            <div class="card-body">
+              <h5>Card title</h5>
+              <p class="text-light">This is another card with title and supporting text below. This card has some
+                additional content to make it slightly taller overall.</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="quotes" class="mt-3 pt-5 sec-four pb-5 mb-5 jumbotron-fluid d-block w-100">
+      <div class="container pt-3">
+        <h1 class="pb-3">Quotes</h1>
+        <div class="mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5>Card title</h5>
+                <p class="text-light">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="contact" class="sec-five container ">
+      <h1 class="text-center mb-5 ">Contact Us</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pt-5 sec-five-description pb-5 mb-5 jumbotron-fluid d-block w-100">
+            <div class="container pt-3">
+              <div class="mb-3">
+                <div class="">
+                  <div class="">
+                    <div class="card-body">
+                      <h5 class="mt-2 mb-5">Feel <mark>Free</mark> to contact us..! </h5>
+                      <p class="text-light">Internet Marketing Ninjas is led by SEO veteran Jim Boykin. We have 48
+                        in-house employees and the average Ninja has been on the team more than six years. 20% of the
+                        Ninjas have been on staff more than 10 years, and in total they have more than 300 years of
+                        experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="text-light col-md-6">
+
+          <div class="form-group">
+            <label for="exampleInputname1">Your Name</label>
+            <input type="text" class="form-control  bg-transparent text-light border" id="exampleInputname1"
+              placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control bg-transparent text-light border" id="exampleInputEmail1"
+              aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your message</label>
+            <textarea class="form-control  bg-transparent text-light border" id="exampleFormControlTextarea1"
+              rows="3"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-5 pt-3 bg-danger pb-3 jumbotron-fluid d-block w-100">
+      <div class="container">
+        <span class="text-light">Copyright 2019 © All Rights Reserved.</span>
+      </div>
+    </div>
+
+    <div class="top-arrow bg-danger">
+      <a href="#home">Top</a>
+    </div>
+
+  </div>
+  <script src="assets/dist/main.js"></script>
+</body>
+
+</html>
